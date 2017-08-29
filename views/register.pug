@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  form(action="/register", method="post")
+    .form-control
+      input(type="text", placeholder="Name", name="name")
+    .form-control
+      input(type="email", placeholder="Email", name="email")
+    .form-control
+      input(type="text", placeholder="Username", name="username")
+    .form-control
+      input(type="password", placeholder="Password", name="password")
+    button(type="submit") Submit
